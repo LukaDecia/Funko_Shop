@@ -1,0 +1,91 @@
+/* NORMALIZACIÓN DEL SITIO*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
+
+/* Para declarar las variables --*/
+:root {
+    /* Palette */
+    --primary-solid:#FF3333;
+    --primary-900: rgba(255, 51, 51, .9);
+    --primary-500: rgba(255, 51, 51, .5);
+    --primary-300: rgba(255, 51, 51, .3);
+
+    --secondary-solid: #1D84B5;
+    --secondary-900: rgb(29, 132, 181, .9);
+    --secondary-500: rgb(29, 132, 181, .5);
+    --secondary-300: rgb(29, 132, 181, .3);
+
+    --dark-solid: #1f1f1f;
+    --dark-900: rgb(31, 31, 31, .9);
+    --dark-500: rgb(31, 31, 31, .5);
+    --dark-300: rgb(31, 31, 31, .3);
+
+    --dark-bg-solid: #30343F;
+    --light-bg-solid: #FAFAFF;
+    --light-font-solid: #FFFFFF;
+
+    /* Typography */
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+
+    /* Fonts Sizes */
+    --font-display: 4.8em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.2em;
+
+    /* Spacings */
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: .8rem;
+}
+
+*,
+* ::before,
+* ::after {
+    margin: 0;
+    padding: 0;
+    /* Va a determinar como se comportan los margin - padding y content
+        border-box se adapta el content de una caja a los cambios en un espacion determinado
+        border-content se modifica todo menos el content */
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+    /* Esto me hace que un em = 10px */
+    color: #111111;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2em;
+    color: inherit;
+    /* Va a tomar el color que hereda*/
+}
+
+ul, ol {
+    list-style-type: none;   
+}
+
+p {
+    font-size: 1.8em;
+}
+
+header, footer {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cointainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
