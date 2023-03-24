@@ -12,7 +12,7 @@
         <nav>
             <picture>
                 <a href="./index.html">
-                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Foto de logo Funkoshop" height="100px">
+                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Foto de logo Funkoshop">
                 </a>
             </picture>
             <ul>
@@ -24,96 +24,104 @@
                 </li>
                 <li>
                     <a href="pages/admin/login.html">LOGIN</a>
-                    <img src="../../img/icons/cart-icon.svg" alt="Imágen de carrito" height="50px">
+                    <img src="../../img/icons/cart-icon.svg" alt="Imágen de carrito">
                 </li>
             </ul>
         </nav>
     </header>
 
     <main class="cointainer"> 
-        <section  id="banner">
+        <section>
             <article>
-                <h3>Nuevos Ingresos</h3>
-                <p>Descubrí el próximo Funko Pop de tu colección</p>
-                <img src="../../img/funkos-banner.webp" alt="Foto de fun" height="300px">
+                <h3 id="banner-title">Nuevos Ingresos</h3>
+                <p id="banner-subtitle">Descubrí el próximo Funko Pop de tu colección</p>
+                <picture id="banner-image">
+                    <img src="../../img/funkos-banner.webp" alt="Foto de fun">
+                </picture>
                 <a href="pages/tienda/shop.html">SHOP</a>
             </article>
         </section>
 
-        <section> 
-            <article id="star-wars">
-                <h3>Star Wars & The Mandalorian </h3>
-                <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
+        <section class="collection"> 
+            <article>
+                <h3 id="collection-title">Star Wars & The Mandalorian </h3>
+                <p id="collection-subtitle">Disfruta de una saga que sigue agregando personajes a su colección.</p>
                 <a href="pages/tienda/shop.html">VER COLECCION</a>
             </article>
-            <picture>
-                <img src="../../img/star-wars/baby-yoda-1.webp" alt="Foto de bebe Yoda" height="200px">
+            <picture class="collection-image">
+                <img src="../../img/star-wars/baby-yoda-1.webp" alt="Foto de bebe Yoda">
             </picture>
         </section>
 
         <section>
-            <article id="pokemon">
-                <h3>POKEMON INDIGO</h3>
-                <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
+            <article>
+                <h3 id="collection-title">POKEMON INDIGO</h3>
+                <p id="collection-subtitle">Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
                 <a href="pages/tienda/shop.html">VER COLECCION</a>
             </article>
-            <picture>
-                <img src="../../img/pokemon/vulpix-1.webp" alt="Foto de vulpix" height="200px">
+            <picture class="collection-image">
+                <img src="../../img/pokemon/vulpix-1.webp" alt="Foto de vulpix">
             </picture>
         </section>
 
         <section>
-            <article id="harry-potter">
-                <h3>HARRY POTTER</h3>
-                <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
+            <article>
+                <h3 id="collection-title">HARRY POTTER</h3>
+                <p id="collection-subtitle">Revive los recuerdos de una saga llena de magia y encanto.</p>
                 <a href="pages/tienda/shop.html">VER COLECCION</a>
             </article>
-            <picture>
-                <img src="../../img/harry-potter/snape-patronus-1.webp" alt="Foto de snape-patronus" height="200px">
+            <picture class="collection-image">
+                <img src="../../img/harry-potter/snape-patronus-1.webp" alt="Foto de snape-patronus">
             </picture>
         </section>
 
         <section>
-            <h2>últimos lazamientos</h2>
+            <h2>ÚLTIMOS LANZAMIENTOS</h2>
             <ul>
                 <li>
-                    <a href="">
-                        <picture>
-                            <img src="../../img/star-wars/trooper-1.webp" alt="Foto de trooper" height="100px">
-                        </picture>
-                        <div>
-                            <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799,99.-</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
+                    <div class="card">
+                        <a href="">
+                            <picture class="card-image">
+                                <img src="../../img/star-wars/trooper-1.webp" alt="Foto de trooper">
+                            </picture>
+                            <div class="card-data">
+                                <p id="collection-card">STAR WARS</p>
+                                <h4 id="title-card">STORMTROOPER LIGHTSABER</h4>
+                                <p id="price-card">$ 1799,99.-</p>
+                                <p id="installments-card">3 CUOTAS SIN INTERÉS</p>
+                            </div>
+                        </a>
+                    </div clas>
                 </li>
                 <li>
-                    <a href="">
-                        <picture>
-                            <img src="../../img/pokemon/pidgeotto-1.webp" alt="Foto de pidgeotto" height="100px">
-                        </picture>
-                        <div>
-                            <p>POKEMON</p>
-                            <h4>PIDGEOTTO</h4>
-                            <p>$ 1799,99.-</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
+                    <div class="card">
+                        <a href="">
+                            <picture class="card-image">
+                                <img src="../../img/pokemon/pidgeotto-1.webp" alt="Foto de pidgeotto">
+                            </picture>
+                            <div class="card-data">
+                                <p id="collection-card">POKEMON</p>
+                                <h4 id="title-card">PIDGEOTTO</h4>
+                                <p id="price-card">$ 1799,99.-</p>
+                                <p id="installments-card">3 CUOTAS SIN INTERÉS</p>
+                            </div>
+                        </a>
+                    </div class="card">
                 </li>
                 <li>
-                    <a href="">
-                        <picture>
-                            <img src="../../img/harry-potter/luna-1.webp" alt="Foto de luna" height="100px">
-                        </picture>
-                        <div>
-                            <p>HARRY POTTER</p>
-                            <h4>LUNA LOVEGOOD LION MASK</h4>
-                            <p>$ 1799,99.-</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>    
-                    </a>
+                    <div class="card">
+                        <a href="">
+                            <picture class="card-image">
+                                <img src="../../img/harry-potter/luna-1.webp" alt="Foto de luna">
+                            </picture>
+                            <div class="card-data">
+                                <p id="collection-card">HARRY POTTER</p>
+                                <h4 id="title-card">LUNA LOVEGOOD LION MASK</h4>
+                                <p id="price-card">$ 1799,99.-</p>
+                                <p id="installments-card">3 CUOTAS SIN INTERÉS</p>
+                            </div>    
+                        </a>
+                    </div class="card">
                 </li>    
             </ul>
         </section>
@@ -142,7 +150,9 @@
                 </picture>
             </nav>
         </section>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+        <section>
+            <p>All rights reserved 2023 - Funkoshop &copy;</p>
+        </section>
     </footer>
 
 </body>

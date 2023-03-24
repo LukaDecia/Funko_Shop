@@ -19,10 +19,17 @@
     --dark-900: rgb(31, 31, 31, .9);
     --dark-500: rgb(31, 31, 31, .5);
     --dark-300: rgb(31, 31, 31, .3);
+    
+    --gray-font-solid: #30343F;
+    --gray-font-900: rgb(48, 52, 63, .9);
+    --gray-font-500: rgb(48, 52, 63, .5);
+    --gray-font-300: rgb(48, 52, 63, .3);
 
     --dark-bg-solid: #30343F;
     --light-bg-solid: #FAFAFF;
+
     --light-font-solid: #FFFFFF;
+
 
     /* Typography */
     --base-font: 'Inter', sans-serif;
@@ -63,11 +70,11 @@ html {
     font-size: 62.5%;
     /* Esto me hace que un em = 10px */
     color: #111111;
+    background-color: var(--light-bg-solid);
 }
 
 a {
     text-decoration: none;
-    font-size: 2em;
     color: inherit;
     /* Va a tomar el color que hereda*/
 }
@@ -77,15 +84,114 @@ ul, ol {
 }
 
 p {
-    font-size: 1.8em;
+    color: var(--gray-font-900);
 }
 
-header, footer {
-    color: white;
-    font-family: 'Raleway', sans-serif;
+h3, h4 {
+    color: var(--dark-solid);
+}
+
+h2 {
+    font-family: var(--alternative-font);
+    font-weight: 700;
+    font-size: var(--font-display);
+}
+
+header, footer{
+    background-color: var(--dark-bg-solid);
+}
+
+header, footer nav{
+    font-size: var(--font-large);
+    color: var(--light-font-solid);
+    font-weight: 500px;
+    font-style: var(--alternative-font);
 }
 
 .cointainer {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.card {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.card img {
+    width: 100% ;
+}
+.card-image {
+    display: block;
+    padding: 1.5rem;
+}
+
+.card-data {
+    padding: 1.5rem;
+}
+
+.card .card-data p {
+    margin-top: 2.6rem;
+    margin-bottom: 1.9rem;
+    margin: 1.3rem 0;
+}
+
+#collection-card, #price-card {
+    font-size: var(--font-small);
+    font-weight: 500;
+}
+
+#title-card {
+    font-size: var(--font-medium);
+    font-weight: 700;
+}
+
+#installments-card {
+    font-size: var(--font-xsmall);
+    color: var(--secondary-solid);
+    font-weight: 700;
+}
+
+.collection-image {
+    display: inline-block;
+    width: 600px;
+    height: 600px;
+}
+
+#collection-title {
+    font-style: var(--alternative-font);
+    font-weight: 500;
+    font-size: var(--font-display);
+}
+
+#collection-subtitle {
+    font-style: var(--alternative-font);
+    font-weight: 400;
+    font-size: var(--font-large);
+}
+
+#banner-image {
+    position: absolute;
+    top: -246px;
+    height: 888px;
+    z-index: -1;
+}
+
+/* 
+position: relative;
+top: -340px;
+*/
+
+#banner-title {
+    font-weight: 700;
+    font-size: var(--font-display);
+    font-style: var(--alternative-font);
+    color: var(--light-font-solid);
+}
+
+#banner-subtitle {
+    font-weight: 400;
+    font-size: var(--font-medium);
+    font-style: var(--alternative-font);
+    color: var(--light-font-solid);
 }
