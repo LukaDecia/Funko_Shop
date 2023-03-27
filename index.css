@@ -98,20 +98,28 @@ h2 {
     font-size: var(--font-display);
 }
 
-
-
 header, footer{
     background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    font-weight: 500px;
+    font-style: var(--alternative-font);
+    
 }
 
 header, footer nav{
     font-size: var(--font-large);
-    color: var(--light-font-solid);
-    font-weight: 500px;
-    font-style: var(--alternative-font);
 }
 
+#footer-derecho{
+    font-size: var(--font-small);
+    color: var(--light-font-solid);
+    text-align: center;
+}
 
+#text-shop::after{
+    content: ">";
+    transform: rotate(-90deg);
+}
 
 .cointainer {
     max-width: 1200px;
@@ -123,6 +131,7 @@ header, footer nav{
 .card {
     width: 360px;
     margin: 0 auto;
+    position: relative;
 }
 
 .card img {
@@ -143,19 +152,37 @@ header, footer nav{
     margin: 1.3rem 0;
 }
 
+.tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 1.5rem;
+    width: 96px;
+    
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    font-family: var(--dark-solid);
+    font-weight: 500;
+    font-size: var(--font-small);
+    text-align: center;
+
+}
 
 
-#collection-card, #price-card {
+
+
+.collection-card, .price-card {
     font-size: var(--font-small);
     font-weight: 500;
 }
 
-#title-card {
+.title-card {
     font-size: var(--font-medium);
     font-weight: 700;
 }
 
-#installments-card {
+.installments-card {
     font-size: var(--font-xsmall);
     color: var(--secondary-solid);
     font-weight: 700;
@@ -167,41 +194,105 @@ header, footer nav{
     height: 600px;
 }
 
-#collection-title {
+.collection-title {
     font-style: var(--alternative-font);
     font-weight: 500;
     font-size: var(--font-display);
+    text-transform: uppercase;
 }
 
-#collection-subtitle {
+.collection-subtitle {
     font-style: var(--alternative-font);
     font-weight: 400;
     font-size: var(--font-large);
+    margin-top: 6px;
+}
+
+.line {
+    display: block;
+    border: 3px solid var(--primary-solid);
+    width: 645px;
+    margin-top: 28px;
 }
 
 
-
-#banner-image {
+.banner-image {
     position: absolute;
+    width: 100%;
+    height: 890px;
+    left: 0px;
     top: -246px;
+
+    background: url("img/funkos-banner.webp");
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    filter: blur(3px);
     z-index: -1;
 }
 
-/* 
-position: relative;
-top: -340px;
-*/
+.banner{
+    padding-top: 180px;
+    padding-bottom: 280px;
+}
 
-#banner-title {
+.banner-title {
     font-weight: 700;
     font-size: var(--font-display);
     font-style: var(--alternative-font);
     color: var(--light-font-solid);
 }
 
-#banner-subtitle {
+.banner-subtitle {
     font-weight: 400;
     font-size: var(--font-medium);
     font-style: var(--alternative-font);
     color: var(--light-font-solid);
+    margin-top: 7px;
 }
+
+.banner-container{
+    width: 100%;
+    height: 888px;
+}
+
+.btn{
+    display: inline-block;
+    border-radius: 50px;
+    font-style: var(--dark-solid);
+    font-weight: 500;
+    font-size: var(--font-large);
+    line-height: 29px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.btn-primary{
+    padding: 18px 48px 18px 48px;
+    background: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    margin-top: 34px;
+}
+
+.btn-secundary{
+    padding: 12px 78px 12px 78px;
+    background: var(--light-bg-solid);
+    color: var(--dark-solid);
+    margin-top: 48px;
+}
+
+.btn:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+

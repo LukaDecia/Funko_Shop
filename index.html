@@ -17,7 +17,7 @@
             </picture>
             <ul>
                 <li>
-                    <a href="pages/tienda/shop.html">SHOP</a>
+                    <a href="pages/tienda/shop.html" id="text-shop">SHOP</a>
                 </li>
                 <li>
                     <a href="">CONTACTO</a>
@@ -31,22 +31,22 @@
     </header>
 
     <main class="cointainer"> 
+
         <section>
-            <article>
-                <h3 id="banner-title">Nuevos Ingresos</h3>
-                <p id="banner-subtitle">Descubrí el próximo Funko Pop de tu colección</p>
-                <picture id="banner-image">
-                    <img src="img/funkos-banner.webp" alt="Foto de fun">
-                </picture>
-                <a href="pages/tienda/shop.html">SHOP</a>
+            <article class="banner">
+                <picture class="banner-image"></picture>
+                    <h3 class="banner-title">Nuevos Ingresos</h3>
+                    <p class="banner-subtitle">Descubrí el próximo Funko Pop de tu colección</p>
+                    <a class="btn btn-secundary" href="pages/tienda/shop.html" role="button">shop</a>
             </article>
         </section>
 
-        <section class="collection"> 
+        <section> 
             <article>
-                <h3 id="collection-title">Star Wars & The Mandalorian </h3>
-                <p id="collection-subtitle">Disfruta de una saga que sigue agregando personajes a su colección.</p>
-                <a href="pages/tienda/shop.html">VER COLECCION</a>
+                <h3 class="collection-title">Star Wars & <br> the Mandalorian </h3>
+                <p class="collection-subtitle">Disfruta de una saga que sigue <br> agregando personajes a su colección.</p>
+                <hr class="line">
+                <a class="btn btn-primary" href="pages/tienda/shop.html" role="button">VER COLECCION</a>
             </article>
             <picture class="collection-image">
                 <img src="img/star-wars/baby-yoda-1.webp" alt="Foto de bebe Yoda">
@@ -55,9 +55,10 @@
 
         <section>
             <article>
-                <h3 id="collection-title">POKEMON INDIGO</h3>
-                <p id="collection-subtitle">Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
-                <a href="pages/tienda/shop.html">VER COLECCION</a>
+                <h3 class="collection-title">POKEMON INDIGO</h3>
+                <p class="collection-subtitle">Atrapa todos los que puedas y disfruta <br> de una colección llena de amigos.</p>
+                <hr class="line">
+                <a class="btn btn-primary" href="pages/tienda/shop.html" role="button">VER COLECCION</a>
             </article>
             <picture class="collection-image">
                 <img src="img/pokemon/vulpix-1.webp" alt="Foto de vulpix">
@@ -66,9 +67,10 @@
 
         <section>
             <article>
-                <h3 id="collection-title">HARRY POTTER</h3>
-                <p id="collection-subtitle">Revive los recuerdos de una saga llena de magia y encanto.</p>
-                <a href="pages/tienda/shop.html">VER COLECCION</a>
+                <h3 class="collection-title">HARRY POTTER</h3>
+                <p class="collection-subtitle">Revive los recuerdos de una saga llena <br> de magia y encanto.</p>
+                <hr class="line">
+                <a class="btn btn-primary" href="pages/tienda/shop.html" role="button">VER COLECCION</a>
             </article>
             <picture class="collection-image">
                 <img src="img/harry-potter/snape-patronus-1.webp" alt="Foto de snape-patronus">
@@ -81,29 +83,31 @@
                 <li>
                     <div class="card">
                         <a href="">
+                            <p class="tag">NUEVO</p>
                             <picture class="card-image">
                                 <img src="img/star-wars/trooper-1.webp" alt="Foto de trooper">
                             </picture>
                             <div class="card-data">
-                                <p id="collection-card">STAR WARS</p>
-                                <h4 id="title-card">STORMTROOPER LIGHTSABER</h4>
-                                <p id="price-card">$ 1799,99.-</p>
-                                <p id="installments-card">3 CUOTAS SIN INTERÉS</p>
+                                <p class="collection-card">STAR WARS</p>
+                                <h4 class="title-card">STORMTROOPER LIGHTSABER</h4>
+                                <p class="price-card">$ 1799,99.-</p>
+                                <p class="installments-card">3 CUOTAS SIN INTERÉS</p>
                             </div>
                         </a>
-                    </div clas>
+                    </div>
                 </li>
                 <li>
                     <div class="card">
                         <a href="">
+                            <p class="tag">NUEVO</p>
                             <picture class="card-image">
                                 <img src="img/pokemon/pidgeotto-1.webp"Foto de pidgeotto">
                             </picture>
                             <div class="card-data">
-                                <p id="collection-card">POKEMON</p>
-                                <h4 id="title-card">PIDGEOTTO</h4>
-                                <p id="price-card">$ 1799,99.-</p>
-                                <p id="installments-card">3 CUOTAS SIN INTERÉS</p>
+                                <p class="collection-card">POKEMON</p>
+                                <h4 class="title-card">PIDGEOTTO</h4>
+                                <p class="price-card">$ 1799,99.-</p>
+                                <p class="installments-card">3 CUOTAS SIN INTERÉS</p>
                             </div>
                         </a>
                     </div class="card">
@@ -111,14 +115,15 @@
                 <li>
                     <div class="card">
                         <a href="">
+                            <p class="tag">NUEVO</p>
                             <picture class="card-image">
                                 <img src="img/harry-potter/luna-1.webp" alt="Foto de luna">
                             </picture>
                             <div class="card-data">
-                                <p id="collection-card">HARRY POTTER</p>
-                                <h4 id="title-card">LUNA LOVEGOOD LION MASK</h4>
-                                <p id="price-card">$ 1799,99.-</p>
-                                <p id="installments-card">3 CUOTAS SIN INTERÉS</p>
+                                <p class="collection-card">HARRY POTTER</p>
+                                <h4 class="title-card">LUNA LOVEGOOD LION MASK</h4>
+                                <p class="price-card">$ 1799,99.-</p>
+                                <p class="installments-card">3 CUOTAS SIN INTERÉS</p>
                             </div>    
                         </a>
                     </div class="card">
@@ -151,7 +156,7 @@
             </nav>
         </section>
         <section>
-            <p>All rights reserved 2023 - Funkoshop &copy;</p>
+                <p id="footer-derecho">All rights reserved 2023 - Funkoshop &copy;</p>
         </section>
     </footer>
 
