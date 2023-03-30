@@ -8,122 +8,124 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <picture>
+    <header class="header">
+        <nav class="container navbar__header">
+            <picture class="navbar__img">
                 <a href="./index.html">
                     <img src="img/branding/logo_light_horizontal.svg" alt="Foto de logo Funkoshop">
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="pages/tienda/shop.html" id="text-shop">SHOP</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="pages/tienda/shop.html" class="menu__item-shop">SHOP</a>
                 </li>
-                <li>
+                <li class="navbar__item">
                     <a href="">CONTACTO</a>
                 </li>
-                <li>
+                <li class="navbar__item">
                     <a href="pages/admin/login.html">LOGIN</a>
+                </li>
+                <li>
                     <img src="img/icons/cart-icon.svg" alt="Imágen de carrito">
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main class="cointainer"> 
+    <main class="container"> 
 
         <section>
             <article class="banner">
-                <picture class="banner-image"></picture>
-                    <h3 class="banner-title">Nuevos Ingresos</h3>
-                    <p class="banner-subtitle">Descubrí el próximo Funko Pop de tu colección</p>
+                <picture class="banner__img"></picture>
+                    <h3 class="banner__title">Nuevos Ingresos</h3>
+                    <p class="banner__subtitle">Descubrí el próximo Funko Pop de tu colección</p>
                     <a class="btn btn-secundary" href="pages/tienda/shop.html" role="button">shop</a>
             </article>
         </section>
 
-        <section> 
+        <section class="collection-section"> 
             <article>
-                <h3 class="collection-title">Star Wars & <br> the Mandalorian </h3>
-                <p class="collection-subtitle">Disfruta de una saga que sigue <br> agregando personajes a su colección.</p>
-                <hr class="line">
+                <h3 class="collection__title">Star Wars & <br> the Mandalorian </h3>
+                <p class="collection__subtitle">Disfruta de una saga que sigue <br> agregando personajes a su colección.</p>
+                <hr class="collection__line">
                 <a class="btn btn-primary" href="pages/tienda/shop.html" role="button">VER COLECCION</a>
             </article>
-            <picture class="collection-image">
+            <picture class="collection-section__img">
                 <img src="img/star-wars/baby-yoda-1.webp" alt="Foto de bebe Yoda">
             </picture>
         </section>
 
-        <section>
+        <section class="collection-section second-section">
             <article>
-                <h3 class="collection-title">POKEMON INDIGO</h3>
-                <p class="collection-subtitle">Atrapa todos los que puedas y disfruta <br> de una colección llena de amigos.</p>
-                <hr class="line">
+                <h3 class="collection__title">POKEMON INDIGO</h3>
+                <p class="collection__subtitle">Atrapa todos los que puedas y disfruta <br> de una colección llena de amigos.</p>
+                <hr class="collection__line">
                 <a class="btn btn-primary" href="pages/tienda/shop.html" role="button">VER COLECCION</a>
             </article>
-            <picture class="collection-image">
+            <picture class="collection-section__img">
                 <img src="img/pokemon/vulpix-1.webp" alt="Foto de vulpix">
             </picture>
         </section>
 
-        <section>
+        <section class="collection-section">
             <article>
-                <h3 class="collection-title">HARRY POTTER</h3>
-                <p class="collection-subtitle">Revive los recuerdos de una saga llena <br> de magia y encanto.</p>
-                <hr class="line">
+                <h3 class="collection__title">HARRY POTTER</h3>
+                <p class="collection__subtitle">Revive los recuerdos de una saga llena <br> de magia y encanto.</p>
+                <hr class="collection__line">
                 <a class="btn btn-primary" href="pages/tienda/shop.html" role="button">VER COLECCION</a>
             </article>
-            <picture class="collection-image">
+            <picture class="collection-section__img">
                 <img src="img/harry-potter/snape-patronus-1.webp" alt="Foto de snape-patronus">
             </picture>
         </section>
 
-        <section>
-            <h2>ÚLTIMOS LANZAMIENTOS</h2>
-            <ul>
-                <li>
+        <section class="news">
+            <h2 class="news__title">ÚLTIMOS LANZAMIENTOS</h2>
+            <ul class="news__container">
+                <li class="news__item">
                     <div class="card">
                         <a href="">
-                            <p class="tag">NUEVO</p>
-                            <picture class="card-image">
+                            <p class="card__tag">NUEVO</p>
+                            <picture class="card__img">
                                 <img src="img/star-wars/trooper-1.webp" alt="Foto de trooper">
                             </picture>
-                            <div class="card-data">
-                                <p class="collection-card">STAR WARS</p>
-                                <h4 class="title-card">STORMTROOPER LIGHTSABER</h4>
-                                <p class="price-card">$ 1799,99.-</p>
-                                <p class="installments-card">3 CUOTAS SIN INTERÉS</p>
+                            <div class="card__content">
+                                <p class="content__collection">STAR WARS</p>
+                                <h4 class="content__title">STORMTROOPER LIGHTSABER</h4>
+                                <p class="content__price">$ 1799,99.-</p>
+                                <p class="content__installments">3 CUOTAS SIN INTERÉS</p>
                             </div>
                         </a>
                     </div>
                 </li>
-                <li>
+                <li class="news__item">
                     <div class="card">
                         <a href="">
-                            <p class="tag">NUEVO</p>
-                            <picture class="card-image">
+                            <p class="card__tag">NUEVO</p>
+                            <picture class="card__img">
                                 <img src="img/pokemon/pidgeotto-1.webp"Foto de pidgeotto">
                             </picture>
-                            <div class="card-data">
-                                <p class="collection-card">POKEMON</p>
-                                <h4 class="title-card">PIDGEOTTO</h4>
-                                <p class="price-card">$ 1799,99.-</p>
-                                <p class="installments-card">3 CUOTAS SIN INTERÉS</p>
+                            <div class="card__content">
+                                <p class="content__collection">POKEMON</p>
+                                <h4 class="content__title">PIDGEOTTO</h4>
+                                <p class="content__price">$ 1799,99.-</p>
+                                <p class="content__installments">3 CUOTAS SIN INTERÉS</p>
                             </div>
                         </a>
                     </div class="card">
                 </li>
-                <li>
+                <li class="news__item">
                     <div class="card">
                         <a href="">
-                            <p class="tag">NUEVO</p>
-                            <picture class="card-image">
+                            <p class="card__tag">NUEVO</p>
+                            <picture class="card__img">
                                 <img src="img/harry-potter/luna-1.webp" alt="Foto de luna">
                             </picture>
-                            <div class="card-data">
-                                <p class="collection-card">HARRY POTTER</p>
-                                <h4 class="title-card">LUNA LOVEGOOD LION MASK</h4>
-                                <p class="price-card">$ 1799,99.-</p>
-                                <p class="installments-card">3 CUOTAS SIN INTERÉS</p>
+                            <div class="card__content">
+                                <p class="content__collection">HARRY POTTER</p>
+                                <h4 class="content__title">LUNA LOVEGOOD LION MASK</h4>
+                                <p class="content__price">$ 1799,99.-</p>
+                                <p class="content__installments">3 CUOTAS SIN INTERÉS</p>
                             </div>    
                         </a>
                     </div class="card">
@@ -133,30 +135,30 @@
 
     </main>
 
-    <footer>
-        <section>
-            <nav>
-                <ul>
-                    <li>
+    <footer class="footer">
+        <section class="footer__container">
+            <nav class="container__item container">
+                <ul class="navbar__footer">
+                    <li class="navbar__item">
                         <a href="pages/tienda/shop.html">SHOP</a>
                     </li>
-                    <li>
+                    <li class="navbar__item">
                         <a href="pages/admin/register.html">REGISTRARSE</a>
                     </li>
-                    <li>
+                    <li class="navbar__item">
                         <a href="pages/admin/login.html">INGRESAR</a>
                     </li>
-                    <li>
+                    <li class="navbar__item">
                         <a href="">CONTACTO</a>
                     </li>
                 </ul>
-                <picture>
-                    <img src="img/branding/isotype.svg" alt="Logo de Funkoshop">
-                </picture>
             </nav>
+            <picture class="navbar__img container__item">
+                <img src="img/branding/isotype.svg" alt="Logo de Funkoshop">
+            </picture>
         </section>
-        <section>
-                <p id="footer-derecho">All rights reserved 2023 - Funkoshop &copy;</p>
+        <section class="footer__container">
+                <p class="footer__copyright">All rights reserved 2023 - Funkoshop &copy;</p>
         </section>
     </footer>
 
