@@ -43,13 +43,15 @@
     --font-large: 2.4em;
     --font-medium: 1.8em;
     --font-small: 1.6em;
-    --font-xsmall: 1.2em;
+    --font-xsmall: 1.4em;
 
     /* Spacings */
     --spacing-128: 12.8rem;
     --spacing-68: 6.8rem;
     --spacing-36: 3.6rem;
     --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: .8rem;
@@ -67,17 +69,22 @@
 }
 
 html {
-    font-family: 'Inter', sans-serif;
-    font-size: 62.5%;
-    /* Esto me hace que un em = 10px */
-    color: #111111;
-    background-color: var(--light-bg-solid);
+    font-family: var(--base-font);
+    font-size: 62.5%; /* Esto me hace que un em = 10px */
+    color: var(--dark-solid);
 }
 
 a {
     text-decoration: none;
+    font-family: inherit;
     color: inherit;
     /* Va a tomar el color que hereda*/
+}
+
+header,
+footer {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
 }
 
 ul, ol {
@@ -85,19 +92,84 @@ ul, ol {
 }
 
 p {
-    color: var(--gray-font-900);
+    font-size: var(--font-medium);
 }
 
-h3, h4 {
-    color: var(--dark-solid);
+img {
+    width: 100%;
 }
 
-h2 {
-    font-family: var(--alternative-font);
-    font-weight: 700;
-    font-size: var(--font-display);
+.cointainer{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* HEADER */
+
+header{
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo {
+    max-width: 300px;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+}
+
+.navbar__link {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) /* arriba abajo*/ var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+}
+
+.navbar__link:hover {
+    background-color: var(--primary-900);
+}
+
+.with-icon{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+
+.with-submenu:hover .submenu{
+    display: block; /* Para que aparezca el submenu */
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+    width: 300px;
+}
+
+.submenu__link {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+}
+
+.submenu__link:hover{
+    background-color: var(--primary-900);
+}
+
+
+    /*
 header, footer{
     background-color: var(--dark-bg-solid);
     color: var(--light-font-solid);
@@ -293,6 +365,6 @@ header, footer nav{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-
+*/
 
 
